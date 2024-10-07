@@ -13,6 +13,7 @@
 .navbar {
     padding-bottom: 0 !important;
     font-size: 24px;
+    padding: 8px !important;
 }
 
 .new-banner {
@@ -64,19 +65,6 @@ hr {
 .blue {
     background-color: #005892 !important;
     color: white !important;
-}
-
-.card_style {
-    margin: 1em;
-    transition: .15s ease-in-out;
-}
-
-.card_style:hover {
-    margin: 1em;
-    transition: .15s ease-in-out  opacity 1;
-    -webkit-box-shadow: 0px 5px 6px 3px rgba(219,219,219,1);
-    -moz-box-shadow: 0px 5px 6px 3px rgba(219,219,219,1);
-    box-shadow: 0px 5px 6px 3px rgba(219,219,219,1);
 }
 
 .local {
@@ -162,6 +150,7 @@ hr {
     text-align: left;
     background-color: #005892;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
 }
 
 .banner-stylish {
@@ -198,10 +187,16 @@ hr {
     gap: 2vw;
     padding: 20px;  
     max-width: 1200px;  
-    margin: 20px auto; 
+    margin: 30px auto; 
     align-items: center;
     justify-content: center;
     text-align: left; 
+    border-radius: 8px;
+}
+
+.separator {
+    width: 100%;
+    height: 2vh;
 }
 
 .work-text {
@@ -224,12 +219,13 @@ hr {
     justify-content: center;
     text-align:justify;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .works-container-3 {
     background-color: #ecf7ff;
-    border-radius: 6px;
-    padding: 20px;  
+    border-radius: 8px;
+    padding: 30px;  
     max-width: 1200px;  
     margin: 30px auto;
     align-items: center;
@@ -270,22 +266,37 @@ hr {
 }
 
 /* Display cards */
+
 .card-container {
-    margin: 50px auto;
+    margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     padding: 20px;
+    max-width: 1200px;
 }
 
 .card {
     position: relative;
-    width: 300px;
+    width: 250px;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
+}
+
+.card_style {
+    margin: 1em;
+    transition: .15s ease-in-out;
+}
+
+.card_style:hover {
+    margin: 1em;
+    transition: .15s ease-in-out  opacity 1;
+    -webkit-box-shadow: 0px 5px 6px 3px rgba(219,219,219,1);
+    -moz-box-shadow: 0px 5px 6px 3px rgba(219,219,219,1);
+    box-shadow: 0px 5px 6px 3px rgba(219,219,219,1);
 }
 
 .card:hover {
@@ -306,13 +317,13 @@ hr {
     height: 100%;
     background-color: rgba(43, 43, 43, 0.6);
     background: rgba(255,255,255,1);
-background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(94,94,94,0.77) 46%, rgba(43,43,43,0.63) 75%, rgba(43,43,43,0.5) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(46%, rgba(94,94,94,0.77)), color-stop(75%, rgba(43,43,43,0.63)), color-stop(100%, rgba(43,43,43,0.5)));
-background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(94,94,94,0.77) 46%, rgba(43,43,43,0.63) 75%, rgba(43,43,43,0.5) 100%);
-background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(94,94,94,0.77) 46%, rgba(43,43,43,0.63) 75%, rgba(43,43,43,0.5) 100%);
-background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(94,94,94,0.77) 46%, rgba(43,43,43,0.63) 75%, rgba(43,43,43,0.5) 100%);
-background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(94,94,94,0.77) 46%, rgba(43,43,43,0.63) 75%, rgba(43,43,43,0.5) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#2b2b2b', GradientType=0 );
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(94,94,94,0.77) 46%, rgba(43,43,43,0.63) 75%, rgba(43,43,43,0.5) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(46%, rgba(94,94,94,0.77)), color-stop(75%, rgba(43,43,43,0.63)), color-stop(100%, rgba(43,43,43,0.5)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(94,94,94,0.77) 46%, rgba(43,43,43,0.63) 75%, rgba(43,43,43,0.5) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(94,94,94,0.77) 46%, rgba(43,43,43,0.63) 75%, rgba(43,43,43,0.5) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(94,94,94,0.77) 46%, rgba(43,43,43,0.63) 75%, rgba(43,43,43,0.5) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(94,94,94,0.77) 46%, rgba(43,43,43,0.63) 75%, rgba(43,43,43,0.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#2b2b2b', GradientType=0 );
     color: #ffffff;
     font-size: 24px;
     display: flex;
@@ -419,4 +430,12 @@ textarea {
         margin: 0;
         padding: 2px 1vw;
     }
+}
+
+.privacy-box {
+    background-color: #005892;
+    color: white;
+    height: 30px;
+    width: 100%;
+    text-align: center;
 }
